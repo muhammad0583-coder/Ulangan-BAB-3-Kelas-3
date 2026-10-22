@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ulangan Harian Matematika Kelas 3 SD</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#dff1ff;--bg2:#fff6d6;--card:#fff;--ink:#1f2a44;--mute:#56627f;--pri:#2f80ed;--pri2:#1c5fc0;--yel:#ffd23f;--mint:#d2f5e8;--lav:#ece6ff;--ok:#0e6b4f;--okbg:#dcf7ea;--no:#a01f45;--nobg:#ffe4ea;--bd:#c9def5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#0f1b2d;--bg2:#1b1830;--card:#182740;--ink:#eaf1ff;--mute:#aebbd6;--pri:#3d86ee;--pri2:#2f6fd1;--mint:#12372f;--lav:#262046;--ok:#86e8bd;--okbg:#0f3a2e;--no:#ffb6c8;--nobg:#4a1c2b;--bd:#2b4163}}
+:root[data-theme="dark"]{--bg1:#0f1b2d;--bg2:#1b1830;--card:#182740;--ink:#eaf1ff;--mute:#aebbd6;--pri:#3d86ee;--pri2:#2f6fd1;--mint:#12372f;--lav:#262046;--ok:#86e8bd;--okbg:#0f3a2e;--no:#ffb6c8;--nobg:#4a1c2b;--bd:#2b4163}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;font-family:Nunito,"Segoe UI",Arial,sans-serif;font-size:18px;line-height:1.55;color:var(--ink);background:linear-gradient(160deg,var(--bg1),var(--bg2)) fixed}
+#app{max-width:760px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:2px solid var(--bd);border-radius:24px;padding:20px;box-shadow:0 6px 18px rgba(40,80,140,.12);margin-bottom:14px;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+h1,h2,h3{font-weight:900;line-height:1.2;margin:.3em 0}
+h1{font-size:2rem}h2{font-size:1.45rem}h3{font-size:1.1rem}
+.mascot{font-size:4rem;display:inline-block;animation:bob 2.4s ease-in-out infinite}
+.hero{text-align:center;background:linear-gradient(135deg,var(--mint),var(--lav))}
+.mute{color:var(--mute)}
+input[type=text]{width:100%;font:inherit;font-weight:700;padding:14px 16px;border:3px solid var(--bd);border-radius:16px;background:var(--card);color:var(--ink);margin:10px 0}
+input:focus,button:focus-visible{outline:4px solid var(--yel)}
+button{font:inherit;font-weight:900;border:0;border-radius:18px;padding:14px 22px;min-height:52px;cursor:pointer;background:var(--pri);color:#fff;box-shadow:0 4px 0 var(--pri2)}
+button.sec{background:var(--card);color:var(--pri);border:3px solid var(--pri);box-shadow:none}
+button.big{width:100%;font-size:1.15rem}
+button:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.row button{flex:1;min-width:140px}
+.bar{height:16px;background:var(--bd);border-radius:99px;overflow:hidden;margin:6px 0 12px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#ffb020,#2fc79a);border-radius:99px;transition:width .4s}
+.top{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-weight:800}
+.err{color:var(--no);font-weight:800;min-height:1.4em;margin:0}
+.opts{display:grid;gap:10px;margin-top:12px}
+.opt{text-align:left;background:var(--card);color:var(--ink);border:3px solid var(--bd);box-shadow:none;font-size:1.1rem}
+.opt.sel{border-color:var(--pri);background:var(--lav)}
+.opt.good{border-color:var(--ok);background:var(--okbg)}
+.opt.bad{border-color:var(--no);background:var(--nobg)}
+.numin{display:flex;align-items:center;gap:10px}.numin input{margin:10px 0}
+.fb{border-radius:20px;padding:16px;margin-top:14px;border:3px solid}
+.fb.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.fb.no{background:var(--nobg);border-color:var(--no);color:var(--no)}
+.fb .ic{display:inline-block;animation:pop .4s}
+.fb .big{font-size:1.4rem;font-weight:900}
+.fb p{margin:.4em 0;color:var(--ink)}
+.ex{background:var(--card);border-radius:14px;padding:10px 14px;margin:8px 0;color:var(--ink)}
+.stairs{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.stairs span{flex:1;min-width:54px;text-align:center;padding:8px 4px;border-radius:12px;background:var(--lav);font-weight:900}
+.stairs span:nth-child(odd){background:var(--mint)}
+.pill{display:inline-block;background:var(--yel);color:#3a2f00;border-radius:99px;padding:2px 12px;font-weight:900;font-size:.9rem}
+.score{font-size:4.5rem;font-weight:900;color:var(--pri);line-height:1}
+.badge{font-size:3.5rem;animation:pop .6s}
+.rev{border-left:8px solid;margin:10px 0;padding:10px 14px;border-radius:12px;background:var(--card)}
+.rev.ok{border-color:var(--ok)}.rev.no{border-color:var(--no)}
+.modal{position:fixed;inset:0;background:rgba(10,20,40,.6);display:flex;align-items:center;justify-content:center;padding:16px;z-index:20}
+.modal .card{max-width:420px;text-align:center}
+</style></head><body><div id="app"></div>
+<script>
+"use strict";
+/* ===== KONFIGURASI ===== */
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbx7XfHmbP42hUkLi_ZUP-cZ9m5pjcqudXpmpWE5_QUR-M7AZRJRQrwXf6ccGneuwhz8/exec";
+const MATERI="Matematika Kelas 3 - BAB 3 Pengukuran Panjang dan Berat";
+const KEY="uh_kelas3_bab3_v1";
+
+/* ===== DATA RINGKASAN MATERI ===== */
+const M=[
+{i:"📏",t:"Alat Ukur Panjang: Meter dan Centimeter",b:`<p><b>Penggaris</b> dipakai untuk benda yang pendek, seperti pensil, buku, dan penghapus.</p><p><b>Meteran</b> dipakai untuk benda yang lebih panjang, seperti meja, pintu, dan kain.</p><div class="ex"><b>1 meter = 100 centimeter</b></div><p>Meter → centimeter: <b>dikali 100</b>.<br>Centimeter → meter: <b>dibagi 100</b>.</p><div class="ex">2 m = 2 × 100 = <b>200 cm</b><br>500 cm = 500 ÷ 100 = <b>5 m</b></div>`},
+{i:"🪜",t:"Tangga Satuan Panjang",b:`<p>Urutan satuan panjang dari yang terbesar:</p><div class="stairs"><span>km</span><span>hm</span><span>dam</span><span>m</span><span>dm</span><span>cm</span><span>mm</span></div><p>⬇️ Turun satu tangga: <b>dikali 10</b><br>⬆️ Naik satu tangga: <b>dibagi 10</b></p><div class="ex">1 km = 1.000 m<br>1 m = 10 dm = 100 cm = 1.000 mm</div><div class="ex">4 km = 4 × 1.000 = <b>4.000 m</b><br>70 dm = 70 ÷ 10 = <b>7 m</b></div>`},
+{i:"➕",t:"Kesetaraan dan Operasi Hitung Satuan Panjang",b:`<p>Satuan campuran bisa diubah menjadi satu satuan.</p><div class="ex"><b>250 cm → m dan cm</b><br>250 cm = 200 cm + 50 cm = <b>2 m 50 cm</b></div><div class="ex"><b>4 m 15 cm → cm</b><br>4 m = 400 cm, lalu 400 + 15 = <b>415 cm</b></div><div class="ex"><b>3 m 40 cm + 1 m 20 cm</b><br>Meter: 3 + 1 = 4 m<br>Centimeter: 40 + 20 = 60 cm<br>Hasil: <b>4 m 60 cm</b></div><div class="ex"><b>5 m 80 cm − 2 m 30 cm</b><br>Meter: 5 − 2 = 3 m<br>Centimeter: 80 − 30 = 50 cm<br>Hasil: <b>3 m 50 cm</b></div>`},
+{i:"🧵",t:"Soal Cerita Satuan Panjang",b:`<p>Langkah mengerjakan soal cerita:</p><ol><li>Baca soal dengan teliti.</li><li>Tentukan yang diketahui.</li><li>Tentukan yang ditanyakan.</li><li>Samakan satuan jika perlu.</li><li>Lakukan operasi hitung.</li><li>Tulis kesimpulan.</li></ol><div class="ex"><b>Ibu memiliki kain 5 m. Sebanyak 250 cm dipakai untuk baju. Berapa cm sisa kain?</b><br>5 m = 500 cm<br>Sisa = 500 cm − 250 cm = 250 cm<br>Jadi, sisa kain Ibu <b>250 cm</b> atau <b>2 m 50 cm</b>.</div>`},
+{i:"⚖️",t:"Alat Ukur Berat dan Satuan Berat",b:`<p><b>Timbangan dapur</b>: bahan makanan dan bumbu.<br><b>Timbangan pasar</b>: buah, sayur, dan sembako.<br><b>Timbangan badan</b>: berat badan.</p><div class="ex">1 kg = 1.000 gram<br>1 kg = 10 ons<br>1 ons = 100 gram</div><div class="ex">3 kg = 3 × 1.000 = <b>3.000 gram</b><br>500 gram = 500 ÷ 100 = <b>5 ons</b></div>`},
+{i:"🏋️",t:"Tangga Satuan Berat dan Satuan Lainnya",b:`<div class="stairs"><span>kg</span><span>hg (ons)</span><span>dag</span><span>g</span><span>dg</span><span>cg</span><span>mg</span></div><p>⬇️ Turun satu tangga: <b>dikali 10</b><br>⬆️ Naik satu tangga: <b>dibagi 10</b></p><div class="ex">1 ton = 1.000 kg<br>1 kuintal = 100 kg<br>1 ton = 10 kuintal</div><div class="ex">2 kg 400 g = 2.000 g + 400 g = <b>2.400 gram</b><br>20 ons = 20 ÷ 10 = <b>2 kg</b></div>`},
+{i:"🍎",t:"Operasi Hitung dan Soal Cerita Satuan Berat",b:`<p>Samakan satuan dulu sebelum menghitung.</p><div class="ex"><b>Ayu membeli 2 kg apel dan 500 gram jeruk. Berapa gram belanjaan Ayu?</b><br>2 kg = 2.000 gram<br>Total = 2.000 + 500 = <b>2.500 gram</b></div><div class="ex"><b>Paman memanen 8 kg mangga. Sebanyak 3 kg 500 gram diberikan kepada tetangga. Berapa sisanya?</b><br>8 kg = 8.000 gram<br>3 kg 500 gram = 3.500 gram<br>Sisa = 8.000 − 3.500 = <b>4.500 gram</b> atau <b>4 kg 500 gram</b></div>`},
+{i:"🤝",t:"Pembulatan dan Kejujuran dalam Pengukuran",b:`<p>Pembulatan ke satuan terdekat (misalnya cm atau kg) dilihat dari angka di belakang koma:</p><p>• Kurang dari 5 → dibulatkan <b>ke bawah</b>.<br>• 5 atau lebih → dibulatkan <b>ke atas</b>.</p><div class="ex">Panjang pensil 12,3 cm → <b>12 cm</b><br>Berat beras 4,7 kg → <b>5 kg</b></div><p>Aturan ini dipakai untuk membulatkan hasil ukur desimal ke satuan terdekat. Pembulatan bisa berbeda jika diminta ke puluhan atau ratusan, jadi baca perintahnya.</p><p>Mengukur dan menimbang harus <b>jujur</b>. Pesan ini sesuai Q.S. Al-Isra’ ayat 35: sempurnakanlah takaran dan timbanglah dengan neraca yang benar.</p>`}
+];
+
+/* ===== DATA SOAL (t: mc, tf, num) — kunci ada di sini, tidak tampil sebelum dikunci ===== */
+const Q=[
+{t:"mc",q:"Alat ukur yang paling cocok untuk mengukur panjang meja adalah ....",o:["Penggaris","Meteran","Timbangan","Gelas ukur"],a:1,e:"Meja cukup panjang, jadi kita memakai meteran. Penggaris dipakai untuk benda pendek seperti pensil."},
+{t:"mc",q:"3 m = .... cm",o:["30 cm","300 cm","3.000 cm","103 cm"],a:1,e:"Ingat 1 m = 100 cm.<br>Meter ke centimeter dikali 100.<br>3 × 100 = 300 cm."},
+{t:"mc",q:"6 km = .... m",o:["600 m","60 m","6.000 m","60.000 m"],a:2,e:"1 km = 1.000 m.<br>6 × 1.000 = 6.000 m."},
+{t:"mc",q:"80 dm = .... m",o:["8 m","800 m","80 m","0,8 m"],a:0,e:"Dari dm ke m naik satu tangga, jadi dibagi 10.<br>80 ÷ 10 = 8 m."},
+{t:"mc",q:"365 cm sama dengan ....",o:["3 m 65 cm","36 m 5 cm","3 m 6 cm","30 m 65 cm"],a:0,e:"100 cm = 1 m, jadi 365 cm = 300 cm + 65 cm.<br>300 cm = 3 m.<br>Maka 365 cm = 3 m 65 cm."},
+{t:"mc",q:"2 m 30 cm + 1 m 40 cm = ....",o:["3 m 60 cm","3 m 70 cm","4 m 70 cm","3 m 10 cm"],a:1,e:"Jumlahkan yang satuannya sama.<br>Meter: 2 + 1 = 3 m.<br>Centimeter: 30 + 40 = 70 cm.<br>Hasilnya 3 m 70 cm."},
+{t:"mc",q:"4 kg = .... gram",o:["40 gram","400 gram","4.000 gram","40.000 gram"],a:2,e:"1 kg = 1.000 gram.<br>4 × 1.000 = 4.000 gram."},
+{t:"mc",q:"700 gram = .... ons",o:["7 ons","70 ons","700 ons","0,7 ons"],a:0,e:"1 ons = 100 gram.<br>700 ÷ 100 = 7 ons."},
+{t:"mc",q:"1 ton = .... kg",o:["100 kg","10 kg","1.000 kg","10.000 kg"],a:2,e:"Ingat: 1 ton = 1.000 kg. Sedangkan 1 kuintal = 100 kg."},
+{t:"mc",q:"3 kg 200 g = .... gram",o:["3.200 gram","320 gram","3.020 gram","32.000 gram"],a:0,e:"3 kg = 3.000 gram.<br>3.000 + 200 = 3.200 gram."},
+{t:"mc",q:"Panjang pensil 12,3 cm. Jika dibulatkan ke cm terdekat menjadi ....",o:["12 cm","13 cm","12,5 cm","10 cm"],a:0,e:"Angka di belakang koma adalah 3. Karena kurang dari 5, dibulatkan ke bawah.<br>Jadi 12,3 cm menjadi 12 cm."},
+{t:"mc",q:"Berat beras 4,7 kg. Jika dibulatkan ke kg terdekat menjadi ....",o:["4 kg","5 kg","4,5 kg","7 kg"],a:1,e:"Angka di belakang koma adalah 7. Karena 5 atau lebih, dibulatkan ke atas.<br>Jadi 4,7 kg menjadi 5 kg."},
+{t:"tf",q:"Benar atau salah? 1 meter sama dengan 100 centimeter.",o:["Benar","Salah"],a:0,e:"Pernyataan ini benar. 1 m = 100 cm."},
+{t:"tf",q:"Benar atau salah? Naik satu tangga satuan, bilangannya dikali 10.",o:["Benar","Salah"],a:1,e:"Pernyataan ini salah. Naik satu tangga <b>dibagi 10</b>. Turun satu tangga baru dikali 10."},
+{t:"tf",q:"Benar atau salah? 1 kuintal sama dengan 10 kg.",o:["Benar","Salah"],a:1,e:"Pernyataan ini salah. 1 kuintal = 100 kg. Yang sama dengan 10 kuintal adalah 1 ton."},
+{t:"tf",q:"Benar atau salah? Pengukuran dan penimbangan harus dilakukan dengan jujur.",o:["Benar","Salah"],a:0,e:"Pernyataan ini benar. Kita harus jujur saat mengukur dan menimbang, sesuai pesan Q.S. Al-Isra’ ayat 35."},
+{t:"num",u:"cm",q:"Ibu memiliki kain sepanjang 5 m. Sebanyak 250 cm dipakai untuk membuat baju. Berapa cm sisa kain Ibu?",a:250,e:"Diketahui: kain 5 m dan terpakai 250 cm.<br>Samakan satuan: 5 m = 500 cm.<br>Sisa = 500 − 250 = 250 cm."},
+{t:"num",u:"cm",q:"Tali Rani panjangnya 3 m 40 cm. Ia menyambungnya dengan tali 1 m 20 cm. Berapa cm panjang tali sekarang?",a:460,e:"3 m 40 cm = 340 cm.<br>1 m 20 cm = 120 cm.<br>Panjang tali = 340 + 120 = 460 cm."},
+{t:"num",u:"gram",q:"Ayu membeli 2 kg apel dan 500 gram jeruk. Berapa gram total belanjaan Ayu?",a:2500,e:"2 kg = 2.000 gram.<br>Total = 2.000 + 500 = 2.500 gram."},
+{t:"num",u:"gram",q:"Paman memanen 8 kg mangga. Sebanyak 3 kg 500 gram diberikan kepada tetangga. Berapa gram sisa mangga Paman?",a:4500,e:"8 kg = 8.000 gram.<br>3 kg 500 gram = 3.500 gram.<br>Sisa = 8.000 − 3.500 = 4.500 gram."}
+];
+const N=Q.length, PRAISE=["Hebat! Kamu sudah memahami cara menghitungnya.","Keren! Terus semangat, ya!","Mantap! Jawabanmu tepat sekali.","Pintar! Pertahankan, ya!"];
+
+/* ===== STATUS & PENYIMPANAN LOKAL ===== */
+let S=load()||{stage:"name"}, sel=null;
+function load(){try{return JSON.parse(localStorage.getItem(KEY))}catch(e){return null}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+const $=s=>document.querySelector(s), app=$("#app");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const nf=n=>Number(n).toLocaleString("id-ID");
+const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const ct=q=>q.t==="num"?nf(q.a)+" "+q.u:q.o[q.a];
+const at=(q,v)=>q.t==="num"?nf(v)+" "+q.u:q.o[v];
+const bar=p=>`<div class="bar" role="progressbar" aria-valuenow="${Math.round(p)}" aria-valuemin="0" aria-valuemax="100"><i style="width:${p}%"></i></div>`;
+const correct=()=>S.ans.filter(a=>a.ok).length;
+
+/* ===== TAMPILAN ===== */
+function render(){
+  const f={name:vName,materi:vMateri,quiz:vQuiz,result:vResult}[S.stage]||vName;
+  app.innerHTML=f(); window.scrollTo(0,0);
+  if(S.stage==="quiz"&&S.ans[S.qi]){setTimeout(()=>{const b=$("#nx");if(b)b.disabled=false},2000)}
+}
+function vName(){return `<div class="card hero"><div class="mascot" aria-hidden="true">📏</div><h1>Petualangan Matematika</h1><h2>Ulangan Harian Matematika Kelas 3 SD</h2><p><span class="pill">BAB 3 — Pengukuran Panjang dan Berat</span></p><p>Ayo, tunjukkan kemampuanmu dan jadilah penjelajah matematika! 🌈</p></div>
+<div class="card"><label for="nm"><b>Tulis nama lengkapmu:</b></label><input id="nm" type="text" maxlength="60" autocomplete="off" placeholder="Contoh: Ayu Lestari" value="${esc(S.name||"")}"><p class="err" id="err" role="alert"></p>
+<p class="mute">📖 Petunjuk: baca ringkasan materi sampai selesai dulu, baru kerjakan ulangan.</p><button class="big" data-a="go">Mulai Petualangan</button></div>`}
+function vMateri(){const m=M[S.mi],last=S.mi===M.length-1;return `<div class="top"><span>📚 Jelajahi Materi</span><span>${S.mi+1} dari ${M.length}</span></div>${bar((S.mi+1)/M.length*100)}
+<div class="card"><div style="font-size:3rem" aria-hidden="true">${m.i}</div><span class="pill">Materi ${S.mi+1}</span><h2>${m.t}</h2>${m.b}
+<div class="row">${S.mi>0?'<button class="sec" data-a="prev">⬅ Sebelumnya</button>':""}${last?'<button data-a="ready">Saya Siap Mengerjakan Ulangan</button>':'<button data-a="nextm">Materi Berikutnya ➡</button>'}</div></div>`}
+function vQuiz(){const q=Q[S.qi],a=S.ans[S.qi],n=S.qi+1;
+  let body="";
+  if(q.t==="num"){body=`<div class="numin"><input id="num" type="text" inputmode="numeric" autocomplete="off" placeholder="Tulis angkanya" value="${a?esc(a.v):""}" ${a?"disabled":""}><b>${q.u}</b></div>`}
+  else{const order=q.t==="mc"?S.perm[S.qi]:[0,1];
+    body=`<div class="opts">`+order.map((k,j)=>{let c="opt",mk="";
+      if(a){if(k===q.a){c+=" good";mk=" ✔"}else if(k===+a.v){c+=" bad";mk=" ✖"}}else if(sel===k)c+=" sel";
+      return `<button class="${c}" data-a="opt" data-i="${k}" ${a?"disabled":""}>${q.t==="mc"?"ABCD"[j]+". ":""}${esc(q.o[k])}${mk}</button>`}).join("")+`</div>`}
+  let fb="";
+  if(a){const ok=a.ok;fb=`<div class="fb ${ok?"ok":"no"}" role="status"><div class="big"><span class="ic">${ok?"✔":"✖"}</span> ${ok?"Jawaban Benar!":"Jawaban Belum Tepat"}</div>
+  <p>${ok?PRAISE[S.qi%PRAISE.length]:"Jawabanmu belum benar, tidak apa-apa. Yuk pahami langkahnya agar kamu lebih mengerti!"}</p>
+  <p><b>Jawabanmu:</b> ${esc(at(q,a.v))}</p><p><b>Jawaban yang benar:</b> ${esc(ct(q))}</p>
+  <div class="ex"><b>${ok?"Mengapa benar?":"Yuk, kita pelajari!"}</b><br>${q.e}</div>${ok?"":"<p>Jangan menyerah! Soal berikutnya pasti bisa. 💪</p>"}</div>
+  <div class="row"><button id="nx" data-a="next" disabled>${S.qi===N-1?"Selesaikan Ulangan":"Lanjut ke Soal Berikutnya"}</button></div>`}
+  else fb=`<div class="row"><button id="lk" data-a="lock" ${(q.t==="num"?false:sel===null)?"disabled":""} ${q.t==="num"?"disabled":""}>🔒 Kunci Jawaban</button></div><p class="err" id="err" role="alert"></p>`;
+  return `<div class="top"><span>🧮 Tantangan Matematika</span><span>${esc(S.name)}</span></div><div class="top"><span class="pill">Soal ${n} dari ${N}</span><span aria-hidden="true">🦉 Semangat!</span></div>${bar((S.qi+(a?1:0))/N*100)}
+  <div class="card"><h2>${n}. ${q.q}</h2>${body}${fb}</div>`}
+function stHTML(){if(S.saved)return `<b style="color:var(--ok)">✔ Nilai berhasil disimpan!</b>`;if(S.sending)return `⏳ Menyimpan nilai…`;
+  return `<b style="color:var(--no)">⚠ ${esc(S.err||"Nilai belum tersimpan.")}</b> Nilaimu tetap aman di layar ini.<div class="row"><button data-a="retry">Kirim Ulang Nilai</button></div>`}
+function vResult(){const b=correct(),sc=b*5,d=S.dur,msg=sc>=90?"MasyaAllah, hebat! Pertahankan semangat belajarmu!":sc>=70?"Bagus! Terus berlatih agar semakin mahir.":"Tetap semangat! Pelajari kembali bagian yang belum dipahami dan terus berusaha.";
+  const rev=Q.map((q,i)=>{const a=S.ans[i];return `<div class="rev ${a.ok?"ok":"no"}"><b>${i+1}. ${q.q}</b><br>Jawabanmu: ${esc(at(q,a.v))} — <b>${a.ok?"✔ Benar":"✖ Belum tepat"}</b><br>Jawaban yang benar: <b>${esc(ct(q))}</b><br><span class="mute">${q.e}</span></div>`}).join("");
+  return `<div class="card hero"><div class="badge" aria-hidden="true">🏅</div><h2>Terima kasih, ${esc(S.name)}! Kamu sudah menyelesaikan ulangan.</h2><p class="mute">${MATERI}</p><p>Nilai Akhir</p><div class="score">${sc}</div><p><b>${b}</b> benar dari <b>${N}</b> soal<br>⏱ Durasi: ${Math.floor(d/60)} menit ${d%60} detik (${d} detik)</p><p><span class="pill">Lencana: Petualang Matematika</span></p><p><b>${msg}</b></p><p class="mute"><small>Pesan ini adalah motivasi, bukan pengganti penilaian guru.</small></p></div>
+  <div class="card" aria-live="polite"><h3>Rekap Nilai</h3><div id="st">${stHTML()}</div>${S.saved?'<div class="row"><button class="sec" data-a="newstudent">Siswa Berikutnya</button></div>':""}</div>
+  <div class="card"><button class="big" data-a="rev">${S.rev?"Sembunyikan Pembahasan":"Lihat Pembahasan Lengkap"}</button>${S.rev?rev:""}</div>`}
+
+/* ===== MODAL KONFIRMASI ===== */
+function ask(msg,yes,no,cb){const d=document.createElement("div");d.className="modal";d.innerHTML=`<div class="card" role="dialog" aria-modal="true"><div style="font-size:3rem" aria-hidden="true">🚀</div><p><b>${msg}</b></p><div class="row"><button class="sec" data-m="0">${no}</button><button data-m="1">${yes}</button></div></div>`;
+  d.onclick=e=>{const m=e.target.dataset.m;if(m===undefined)return;d.remove();if(m==="1")cb()};document.body.appendChild(d);d.querySelector("[data-m='1']").focus()}
+
+/* ===== REKAP GOOGLE SHEETS ===== */
+function buildPayload(){const b=correct(),detail=Q.map((q,i)=>({no:i+1,jawaban_siswa:at(q,S.ans[i].v),kunci_jawaban:ct(q),status:S.ans[i].ok?"Benar":"Salah"}));
+  const o={"Waktu":S.time,"Nama siswa":S.name,"Materi":MATERI,"Skor":b*5,"Benar":b,"Total":N,"Durasi (detik)":S.dur,"Detail":JSON.stringify(detail)};
+  return Object.assign({waktu:o["Waktu"],nama:o["Nama siswa"],materi:o["Materi"],skor:o["Skor"],benar:o["Benar"],total:o["Total"],durasi:o["Durasi (detik)"],detail:o["Detail"]},o)}
+async function send(){
+  if(S.sending||S.saved)return; S.sending=true;S.err="";setSt();
+  if(!S.payload){S.payload=buildPayload()} save();
+  try{
+    const r=await fetch(APPS_SCRIPT_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(S.payload)});
+    const t=await r.text();let j={};try{j=JSON.parse(t)}catch(e){}
+    if(r.ok&&(j.status==="success"||j.status==="ok"||j.success===true||j.result==="success"))S.saved=true;
+    else S.err="Server belum mengonfirmasi penyimpanan.";
+  }catch(e){S.err="Koneksi gagal. Periksa internet, lalu coba lagi."}
+  S.sending=false;save();if(S.stage==="result")setSt();
+}
+function setSt(){const el=$("#st");if(el)el.innerHTML=stHTML();if(S.saved&&el&&!$("[data-a=newstudent]"))render()}
+
+/* ===== AKSI ===== */
+document.addEventListener("input",e=>{if(e.target.id==="num"){const b=$("#lk");if(b)b.disabled=!e.target.value.trim()}});
+document.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.id==="nm")act("go")});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(b&&!b.disabled)act(b.dataset.a,b)});
+function act(a,b){
+  if(a==="go"){const n=$("#nm").value.trim().replace(/\s+/g," ");if(!n){$("#err").textContent="Ups, nama belum diisi. Tulis namamu dulu, ya! 😊";return}
+    S={stage:"materi",name:n,mi:0};save();render()}
+  else if(a==="nextm"){S.mi++;save();render()}
+  else if(a==="prev"){S.mi--;save();render()}
+  else if(a==="ready"){ask("Ulangan akan segera dimulai. Setelah dimulai, ringkasan materi tidak bisa dibuka lagi. Mulai sekarang?","Mulai Ulangan","Belum, baca lagi",()=>{
+    S.stage="quiz";S.qi=0;S.ans=[];S.start=Date.now();S.perm=Q.map(q=>q.t==="mc"?shuffle([0,1,2,3]):null);sel=null;delete S.mi;save();render()})}
+  else if(a==="opt"){sel=+b.dataset.i;render()}
+  else if(a==="lock"){const q=Q[S.qi];let v,ok;
+    if(q.t==="num"){const raw=$("#num").value.trim().replace(/\./g,"").replace(",",".");if(raw===""||isNaN(Number(raw))){$("#err").textContent="Tulis angka saja, ya.";return}v=Number(raw);ok=v===q.a}
+    else{if(sel===null){$("#err").textContent="Pilih jawabanmu dulu, ya!";return}v=sel;ok=sel===q.a}
+    S.ans[S.qi]={v:v,ok:ok};sel=null;save();render()}
+  else if(a==="next"){
+    if(S.qi<N-1){S.qi++;save();render()}
+    else ask("Ini soal terakhir. Selesaikan ulangan dan lihat nilaimu?","Ya, Selesai","Belum",finish)}
+  else if(a==="rev"){S.rev=!S.rev;save();render()}
+  else if(a==="retry"){send()}
+  else if(a==="newstudent"){try{localStorage.removeItem(KEY)}catch(e){}S={stage:"name"};render()}
+}
+function finish(){if(S.ans.length<N)return;S.dur=Math.max(1,Math.round((Date.now()-S.start)/1000));
+  S.time=new Date().toLocaleString("sv-SE",{timeZone:"Asia/Makassar"});S.stage="result";S.saved=false;S.sending=false;save();render();send()}
+if(S.sending){S.sending=false}
+render();if(S.stage==="result"&&!S.saved)send();
+</script></body></html>
